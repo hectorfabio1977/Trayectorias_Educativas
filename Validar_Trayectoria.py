@@ -74,7 +74,7 @@ for student in summary_data['PER_ID'].unique():
     
     if '2025' in student_data.columns and 'INSTITUCION' in student_data.columns:
         colegio_final = student_data[student_data['PER_ID'] == student]['INSTITUCION'].iloc[-1] if not student_data[student_data['PER_ID'] == student].empty else None
-        jornada_final = student_data[student_data['PER_ID'] == student]['JORNADA'].iloc[-1] if not student_data[student_data['PER_ID'] == student].empty else None
+        #jornada_final = student_data[student_data['PER_ID'] == student]['JORNADA'].iloc[-1] if not student_data[student_data['PER_ID'] == student].empty else None
     
     # Asignamos los valores al DataFrame resumen
     summary_data.loc[summary_data['PER_ID'] == student, 'Colegio Inicial'] = colegio_inicial
