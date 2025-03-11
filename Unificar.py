@@ -65,6 +65,6 @@ for año, dfs in dataframes.items():
     
     # Guardar el DataFrame consolidado por año en un nuevo archivo CSV
     nombre_archivo = os.path.join(ruta_destino, f"{año}.csv")
-    #nombre_archivo = f"matricula_consolidada_{año}.csv"
+    #nombre_archivo = f"Matricula_consolidada_{año}.csv"
     df_consolidado.to_csv(nombre_archivo, sep=';', index=False)
     print(f"Archivo consolidado para el año {año} guardado como {nombre_archivo}.")
