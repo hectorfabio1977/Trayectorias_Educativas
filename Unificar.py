@@ -5,12 +5,13 @@ import re
 
 
 # Define la ruta donde deseas guardar los archivos
-ruta_destino = r'C:\Users\hlond\OneDrive\Escritorio\Trayectorias_Educativas\Consolidados_Años'
+ruta_destino = r'C:\Hector\INFORMACION SEM\COPIA_PC\DATOS\HECTOR FABIO\Python\Trayectorias_Educativas\Consolidados_Años'
 
 # Paso 1: Cargar los archivos mensuales con ';' O (, ) como separador
 # ** es un patrón que coincide con todos los directorios y subdirectorios.
 # El parámetro recursive=True le indica a glob que busque de forma recursiva en todas las subcarpetas dentro de la carpeta principal.
-archivos = glob.glob(r'C:\Users\hlond\OneDrive\Escritorio\Trayectorias_Educativas\Matriculas_por_Años\**\*.csv', recursive=True)
+archivos = glob.glob(r'C:\Hector\INFORMACION SEM\COPIA_PC\DATOS\HECTOR FABIO\Python\Trayectorias_Educativas\Matriculas_por_Años\**\*.csv', recursive=True)
+
 
 # Ordenar los archivos en orden descendente por nombre (para asegurarse que noviembre O EL ULTIMO MES DEL AÑO esté primero)
 archivos = sorted(archivos, reverse=True)
